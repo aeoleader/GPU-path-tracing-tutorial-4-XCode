@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		471EFFB81DCB203F00F0C902 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFB71DCB203F00F0C902 /* main.cpp */; };
+		471EFFE01DCB207100F0C902 /* BVH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFBF1DCB207100F0C902 /* BVH.cpp */; };
+		471EFFE11DCB207100F0C902 /* BVHNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFC11DCB207100F0C902 /* BVHNode.cpp */; };
+		471EFFE21DCB207100F0C902 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFC31DCB207100F0C902 /* Camera.cpp */; };
+		471EFFE31DCB207100F0C902 /* CudaBVH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFC61DCB207100F0C902 /* CudaBVH.cpp */; };
+		471EFFE41DCB207100F0C902 /* HDRloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFCB1DCB207100F0C902 /* HDRloader.cpp */; };
+		471EFFE51DCB207100F0C902 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFCE1DCB207100F0C902 /* main.cpp */; };
+		471EFFE61DCB207100F0C902 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFD01DCB207100F0C902 /* README.md */; };
+		471EFFE71DCB207100F0C902 /* rgbe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFD41DCB207100F0C902 /* rgbe.cpp */; };
+		471EFFE81DCB207100F0C902 /* SceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFD71DCB207100F0C902 /* SceneLoader.cpp */; };
+		471EFFE91DCB207100F0C902 /* Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFD91DCB207100F0C902 /* Sort.cpp */; };
+		471EFFEA1DCB207100F0C902 /* SplitBVHBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFDB1DCB207100F0C902 /* SplitBVHBuilder.cpp */; };
+		471EFFEB1DCB207100F0C902 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 471EFFDE1DCB207100F0C902 /* Util.cpp */; };
+		471EFFEE1DCB20BC00F0C902 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471EFFED1DCB20BC00F0C902 /* OpenGL.framework */; };
+		471EFFF01DCB20C900F0C902 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 471EFFEF1DCB20C900F0C902 /* libGLEW.2.0.0.dylib */; };
+		471EFFF21DCB20E300F0C902 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471EFFF11DCB20E300F0C902 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +38,43 @@
 
 /* Begin PBXFileReference section */
 		471EFFB41DCB203F00F0C902 /* GPU-path-tracing-tutorial-4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GPU-path-tracing-tutorial-4"; sourceTree = BUILT_PRODUCTS_DIR; };
-		471EFFB71DCB203F00F0C902 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		471EFFBE1DCB207100F0C902 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		471EFFBF1DCB207100F0C902 /* BVH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BVH.cpp; sourceTree = "<group>"; };
+		471EFFC01DCB207100F0C902 /* BVH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVH.h; sourceTree = "<group>"; };
+		471EFFC11DCB207100F0C902 /* BVHNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BVHNode.cpp; sourceTree = "<group>"; };
+		471EFFC21DCB207100F0C902 /* BVHNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVHNode.h; sourceTree = "<group>"; };
+		471EFFC31DCB207100F0C902 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		471EFFC41DCB207100F0C902 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		471EFFC51DCB207100F0C902 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		471EFFC61DCB207100F0C902 /* CudaBVH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CudaBVH.cpp; sourceTree = "<group>"; };
+		471EFFC71DCB207100F0C902 /* CudaBVH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CudaBVH.h; sourceTree = "<group>"; };
+		471EFFC81DCB207100F0C902 /* CudaRenderKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CudaRenderKernel.h; sourceTree = "<group>"; };
+		471EFFC91DCB207100F0C902 /* cutil_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cutil_math.h; sourceTree = "<group>"; };
+		471EFFCA1DCB207100F0C902 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		471EFFCB1DCB207100F0C902 /* HDRloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDRloader.cpp; sourceTree = "<group>"; };
+		471EFFCC1DCB207100F0C902 /* HDRloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDRloader.h; sourceTree = "<group>"; };
+		471EFFCD1DCB207100F0C902 /* linear_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linear_math.h; sourceTree = "<group>"; };
+		471EFFCE1DCB207100F0C902 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		471EFFCF1DCB207100F0C902 /* MouseKeyboardInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseKeyboardInput.h; sourceTree = "<group>"; };
+		471EFFD01DCB207100F0C902 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		471EFFD11DCB207100F0C902 /* renderkernel.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = renderkernel.cu; sourceTree = "<group>"; };
+		471EFFD21DCB207100F0C902 /* renderKernel.cuh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = renderKernel.cuh; sourceTree = "<group>"; };
+		471EFFD31DCB207100F0C902 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		471EFFD41DCB207100F0C902 /* rgbe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rgbe.cpp; sourceTree = "<group>"; };
+		471EFFD51DCB207100F0C902 /* rgbe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgbe.h; sourceTree = "<group>"; };
+		471EFFD61DCB207100F0C902 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		471EFFD71DCB207100F0C902 /* SceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneLoader.cpp; sourceTree = "<group>"; };
+		471EFFD81DCB207100F0C902 /* SceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneLoader.h; sourceTree = "<group>"; };
+		471EFFD91DCB207100F0C902 /* Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sort.cpp; sourceTree = "<group>"; };
+		471EFFDA1DCB207100F0C902 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		471EFFDB1DCB207100F0C902 /* SplitBVHBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SplitBVHBuilder.cpp; sourceTree = "<group>"; };
+		471EFFDC1DCB207100F0C902 /* SplitBVHBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitBVHBuilder.h; sourceTree = "<group>"; };
+		471EFFDD1DCB207100F0C902 /* tonemap.cuh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tonemap.cuh; sourceTree = "<group>"; };
+		471EFFDE1DCB207100F0C902 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		471EFFDF1DCB207100F0C902 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		471EFFED1DCB20BC00F0C902 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		471EFFEF1DCB20C900F0C902 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		471EFFF11DCB20E300F0C902 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471EFFF21DCB20E300F0C902 /* GLUT.framework in Frameworks */,
+				471EFFF01DCB20C900F0C902 /* libGLEW.2.0.0.dylib in Frameworks */,
+				471EFFEE1DCB20BC00F0C902 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +96,7 @@
 			children = (
 				471EFFB61DCB203F00F0C902 /* GPU-path-tracing-tutorial-4 */,
 				471EFFB51DCB203F00F0C902 /* Products */,
+				471EFFEC1DCB20BC00F0C902 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +111,52 @@
 		471EFFB61DCB203F00F0C902 /* GPU-path-tracing-tutorial-4 */ = {
 			isa = PBXGroup;
 			children = (
-				471EFFB71DCB203F00F0C902 /* main.cpp */,
+				471EFFBE1DCB207100F0C902 /* Array.h */,
+				471EFFBF1DCB207100F0C902 /* BVH.cpp */,
+				471EFFC01DCB207100F0C902 /* BVH.h */,
+				471EFFC11DCB207100F0C902 /* BVHNode.cpp */,
+				471EFFC21DCB207100F0C902 /* BVHNode.h */,
+				471EFFC31DCB207100F0C902 /* Camera.cpp */,
+				471EFFC41DCB207100F0C902 /* Camera.h */,
+				471EFFC51DCB207100F0C902 /* CMakeLists.txt */,
+				471EFFC61DCB207100F0C902 /* CudaBVH.cpp */,
+				471EFFC71DCB207100F0C902 /* CudaBVH.h */,
+				471EFFC81DCB207100F0C902 /* CudaRenderKernel.h */,
+				471EFFC91DCB207100F0C902 /* cutil_math.h */,
+				471EFFCA1DCB207100F0C902 /* Geometry.h */,
+				471EFFCB1DCB207100F0C902 /* HDRloader.cpp */,
+				471EFFCC1DCB207100F0C902 /* HDRloader.h */,
+				471EFFCD1DCB207100F0C902 /* linear_math.h */,
+				471EFFCE1DCB207100F0C902 /* main.cpp */,
+				471EFFCF1DCB207100F0C902 /* MouseKeyboardInput.h */,
+				471EFFD01DCB207100F0C902 /* README.md */,
+				471EFFD11DCB207100F0C902 /* renderkernel.cu */,
+				471EFFD21DCB207100F0C902 /* renderKernel.cuh */,
+				471EFFD31DCB207100F0C902 /* resource.h */,
+				471EFFD41DCB207100F0C902 /* rgbe.cpp */,
+				471EFFD51DCB207100F0C902 /* rgbe.h */,
+				471EFFD61DCB207100F0C902 /* Scene.h */,
+				471EFFD71DCB207100F0C902 /* SceneLoader.cpp */,
+				471EFFD81DCB207100F0C902 /* SceneLoader.h */,
+				471EFFD91DCB207100F0C902 /* Sort.cpp */,
+				471EFFDA1DCB207100F0C902 /* Sort.h */,
+				471EFFDB1DCB207100F0C902 /* SplitBVHBuilder.cpp */,
+				471EFFDC1DCB207100F0C902 /* SplitBVHBuilder.h */,
+				471EFFDD1DCB207100F0C902 /* tonemap.cuh */,
+				471EFFDE1DCB207100F0C902 /* Util.cpp */,
+				471EFFDF1DCB207100F0C902 /* Util.h */,
 			);
 			path = "GPU-path-tracing-tutorial-4";
+			sourceTree = "<group>";
+		};
+		471EFFEC1DCB20BC00F0C902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				471EFFF11DCB20E300F0C902 /* GLUT.framework */,
+				471EFFEF1DCB20C900F0C902 /* libGLEW.2.0.0.dylib */,
+				471EFFED1DCB20BC00F0C902 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				471EFFB81DCB203F00F0C902 /* main.cpp in Sources */,
+				471EFFE11DCB207100F0C902 /* BVHNode.cpp in Sources */,
+				471EFFE71DCB207100F0C902 /* rgbe.cpp in Sources */,
+				471EFFE41DCB207100F0C902 /* HDRloader.cpp in Sources */,
+				471EFFEB1DCB207100F0C902 /* Util.cpp in Sources */,
+				471EFFE51DCB207100F0C902 /* main.cpp in Sources */,
+				471EFFE61DCB207100F0C902 /* README.md in Sources */,
+				471EFFE31DCB207100F0C902 /* CudaBVH.cpp in Sources */,
+				471EFFE81DCB207100F0C902 /* SceneLoader.cpp in Sources */,
+				471EFFE21DCB207100F0C902 /* Camera.cpp in Sources */,
+				471EFFE01DCB207100F0C902 /* BVH.cpp in Sources */,
+				471EFFEA1DCB207100F0C902 /* SplitBVHBuilder.cpp in Sources */,
+				471EFFE91DCB207100F0C902 /* Sort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +324,28 @@
 		471EFFBC1DCB203F00F0C902 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.0.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Debug;
 		};
 		471EFFBD1DCB203F00F0C902 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.0.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 			};
 			name = Release;
 		};
